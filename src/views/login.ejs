@@ -6,6 +6,9 @@
     <div class="col-lg-8 my-3">
       <h1 class="text-center">Login</h1>
       <p class="text-center lead">Faca Login ou crie sua conta abaixo</p>
+
+      <%-include('includes/massages')%>
+
       <div class="row">
         <div class="col-12 col-md-6">
           <h4>Faca seu Cadastro</h4>
@@ -13,11 +16,11 @@
             <input type="hidden" name="_csrf" value="<%= csrfToken%>">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp">
             </div>
             <button type="submit" class="btn btn-primary">Criar Conta</button>
           </form>
@@ -29,11 +32,11 @@
             <input type="hidden" name="_csrf" value="<%= csrfToken%>">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp">
             </div>
             <button type="submit" class="btn btn-primary">Entrar</button>
           </form>
